@@ -63,7 +63,10 @@ window.onload = function() {
 
     // NOTES: changed this .get to id
     currentId = urlParams.get("id");
-    console.log(currentId);
+
+    /* NOTES: you can always check typeof to find out the current type which is = string
+    in this case with currentId */ 
+    console.log(typeof currentId);
 
     /* NOTES: Changed to == because returned item.id is number and currentId urlParams is a string 
     so === will return false because they are of different type */
